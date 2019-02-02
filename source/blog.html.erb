@@ -1,0 +1,23 @@
+---
+title: Middleman Blog
+---
+<!--  -->
+  
+<div class="container">
+  <div class="article_page">
+    
+    <% blog.articles[0...5].each do |article| %>
+    <h1>
+      <%= link_to article.title, article.path, :relative => true %>
+      <time><%= article.date.strftime('%b %e %Y') %></time>
+    </h1>
+    <%= article.summary %>
+    <%= link_to "Read more", article.url, :relative => true %>
+    <hr class="grid-2 center">
+    <% end %>
+  </div>
+</div>
+
+
+
+
