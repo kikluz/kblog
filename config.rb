@@ -29,10 +29,10 @@ page '/*.txt', layout: false
 page "blog/*", :layout => :article_layout
 
 # github project pages deploy
-# activate :deploy do |deploy|
-#   deploy.deploy_method = :git
-#   deploy.build_before = true # default: false
-# end
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
+  deploy.build_before = true # default: false
+end
 
 
 configure :build do
