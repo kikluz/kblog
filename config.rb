@@ -14,6 +14,16 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+# github userpages deploy
+#activate :deploy do |deploy|
+  #deploy.method = :git
+  #deploy.build_before = true
+  #deploy.branch   = "master"
+  #deploy.remote   = "git@github.com:username/username.github.io.git"
+#end
+
+
+
 activate :blog do |blog|
   blog.prefix = "blog"
 end
