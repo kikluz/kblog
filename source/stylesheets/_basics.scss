@@ -1,12 +1,23 @@
 //------------------------------------------------
 // basic styles
 //------------------------------------------------
-a {
-  text-decoration: none;
+
+* {
+  box-sizing: border-box;
 }
 
-
-
-
-
-
+/* Pen-specific styles */
+html, body, section {
+  height: 100%;
+}
+.left_half {
+  max-width: 50%;
+  float: left;
+}
+.image_brand {
+  img {max-width: 300px;}
+}
+.right_half {
+  max-width: 50%;
+  float: left;
+}
