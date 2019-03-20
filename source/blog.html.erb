@@ -2,17 +2,21 @@
 title: Middleman Blog
 ---
 <!--  -->
-  
+<div class="content-container">
+	<h1>Heading One</h1>
+	<h2>Heading Two</h2>
+	<hr>
+	<% blog.articles[0...5].each do |article| %>
+	<h1>
+		<%= link_to article.title, article.path, :relative => true %>
+		<time><%= article.date.strftime('%b %e %Y') %></time>
+	</h1>
+	<%= article.summary %>
+	<span class="text-alpha"><%= link_to "Read more", article.url, :relative => true %></span>
+	
 
-    <% blog.articles[0...5].each do |article| %>
-    <h1>
-      <%= link_to article.title, article.path, :relative => true %>
-      <time><%= article.date.strftime('%b %e %Y') %></time>
-    </h1>
-    <%= article.summary %>
-    <%= link_to "Read more", article.url, :relative => true %>
-  
-    <% end %>
+	<% end %>
+</div>
   
 
 
