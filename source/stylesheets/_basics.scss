@@ -60,3 +60,20 @@ html, body, section {
 .text--alpha {
   color: #50a8d8;
 }
+/////
+// neat
+$gutter: 1rem;
+
+.col-1 {
+  float: left;
+  padding: 0 $gutter;
+  width: percentage(1/3);
+}
+
+.col-2 {
+  float: left;
+  padding: 0 $gutter;
+  width: percentage(2/3);
+}
+
+// 🎉 You made a grid!
