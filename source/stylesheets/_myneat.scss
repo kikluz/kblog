@@ -17,4 +17,18 @@ $my-mobile-grid: (
   media: 768px,
 );
 
+ // An example custom grid:
+
+ $custom-grid: (
+   columns: 12,
+   gutter: 20px,
+ );
+
+ // Now pass this "grid" into any of the Neat 2.0 mixins: 
+
+ // @include grid-column(2, $custom-grid);
+
+
+
+
  
