@@ -63,16 +63,21 @@ html, body, section {
 /////
 // neat
 $gutter: 1rem;
-
+.section_split {
+  @include grid-column(6);
+}
 .col-1 {
+  
   float: left;
   padding: 0 $gutter;
   width: percentage(1/3);
 }
 
 .col-2 {
+
   float: left;
   padding: 0 $gutter;
   width: percentage(2/3);
 }
 
+// 🎉 You made a grid!
