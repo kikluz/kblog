@@ -1,7 +1,14 @@
 //------------------------------------------------
 // basic styles
 //------------------------------------------------
+* {
 
+  box-sizing: border-box;
+}
+html, body, section {
+  height: 100%;
+  margin: 0 auto;
+}
 body {
   font-family: 'Merriweather', serif;
   // background-color: #ededed;
@@ -10,74 +17,19 @@ body {
   line-height: 1.618;
   font-size: 16px;
 }
-
-* {
-
-  box-sizing: border-box;
-}
 h1,h2,h3,h4,h5,h6 {
 	font-family: Arial, sans-serif;
 	color: #aeaeae;
 }
 br.clear { clear: both; }
-
+//---------------------------------------------------------------------------
+//  Columns
+//---------------------------------------------------------------------------
+.columns {
+  height: 100vh;
+  max-width: 100%;
+}
 /* Pen-specific styles */
-html, body, section {
-  height: 100%;
-  margin: 0 auto;
-}
-.left_half {
-  max-width: 50%;
-  float: left;
-}
 .image_brand {
-  img {max-width: 300px;}
+  img {max-width: 200px;}
 }
-.right_half {
-  max-width: 50%;
-  float: left;
-}
-//--------------------------------------------------------
-//
-//--------------------------------------------------------
-.content-container {
-  padding: 1.618rem 3.236rem;
-  max-width: 48.54rem;
-  margin: 3.236rem auto;
-  background-color: #fff;
-  box-shadow: 0 0 12px 6px rgba(0,0,0,0.05);
-  border-radius: .269666667rem;
-}
-
-.text-alpha {
-  color: #ab4c76;
-}
-.content-container 
-{
-  color: white;
-  background-color: #264455;
-}
-.text--alpha {
-  color: #50a8d8;
-}
-/////
-// neat
-$gutter: 1rem;
-.section_split {
-  @include grid-column(6);
-}
-.col-1 {
-  
-  float: left;
-  padding: 0 $gutter;
-  width: percentage(1/3);
-}
-
-.col-2 {
-
-  float: left;
-  padding: 0 $gutter;
-  width: percentage(2/3);
-}
-
-// 🎉 You made a grid!

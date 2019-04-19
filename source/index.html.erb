@@ -2,44 +2,25 @@
 title: Kikluz's Blog
 ---
 <!--   -->
-
 <div class="container">
-  <section class="main-panel">
-    <div class="left_half">
-      <article>
-        <h1>KBLOG</h1>
-        <div class="image_brand"> 
-          <%= image_tag 'hitman_logo.jpg' %>
-        </div>
-        <p>
-          I create static websites fast and simple with modern
-          tools for web development.
-        </p> 
-      </article>
+  <div class="columns">
+    <div class="col-left">
+      <h1>Kikluz</h1>
+      <div class="image_brand"> 
+        <%= image_tag 'hitman_logo.jpg' %>
+      </div>
     </div>
 
-    <div class="right_half">
-      <article>
-        <%= link_to 'Blog', '/blog.html', :relative => true %>
-        <p>
-          It is hard to keep it in my mind so I decided to write it down!
-        </p> 
-      </article>
-    </div>
-  </section>
-  
-  <div class="section_split">
-    <div class="col-1">
-      <article>
-        <h1>h1</h1>
-        <p>p</p>
-      </article>
-    </div>
-    <div class="col-2">
-      <aside>aside</aside>
+    <div class="col-right">
+      <p>
+        I create static websites fast and simple with modern
+        tools for web development.
+      </p> 
+      <%= link_to 'Blog', '/blog.html', :relative => true %>
+      <p>
+        It is hard to keep it in my mind so I decided to write it down!
+      </p> 
     </div>
   </div>
 </div>
-
-
 
