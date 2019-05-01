@@ -13,7 +13,6 @@ body {
   font-family: 'Merriweather', serif;
   // background-color: #ededed;
   color: #212121;
-  padding: 1.618rem;
   line-height: 1.618;
   font-size: 16px;
 }
@@ -22,6 +21,9 @@ h1,h2,h3,h4,h5,h6 {
 	color: #aeaeae;
 }
 br.clear { clear: both; }
+.container {
+  padding: 1.618rem;
+}
 //---------------------------------------------------------------------------
 //  Columns
 //---------------------------------------------------------------------------
