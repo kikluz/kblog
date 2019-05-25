@@ -1,8 +1,9 @@
 //------------------------------------------------
 // basic styles
 //------------------------------------------------
-* {
-
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 html, body, section {
@@ -32,10 +33,6 @@ br.clear { clear: both; }
 
 /* If you want the content centered horizontally and vertically */
 .centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -43,4 +40,70 @@ br.clear { clear: both; }
 .centered img {
   width: 150px;
   border-radius: 15%;
+}
+//-------------------------------------------------
+//
+//-------------------------------------------------
+
+$pad: 20px;
+
+.grid {
+  background: white;
+  margin: 0 0 $pad 0;
+  
+  &:after {
+    /* Or @extend clearfix */
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+[class*='col-'] {
+  float: left;
+  padding-right: $pad;
+  .grid &:last-of-type {
+    padding-right: 0;
+  }
+}
+.col-2-3 {
+  width: 66.66%;
+}
+.col-1-3 {
+  width: 33.33%;
+}
+.col-1-2 {
+  width: 50%;
+}
+.col-1-4 {
+  width: 25%;
+}
+.col-1-8 {
+  width: 12.5%;
+}
+
+.module {
+  padding: $pad;
+  background: #eee;
+}
+
+/* Opt-in outside padding */
+.grid-pad {
+  padding: $pad 0 $pad $pad;
+  [class*='col-']:last-of-type {
+    padding-right: $pad;
+  }
+}
+
+body {
+  padding: 10px 50px 200px;
+  background: url(https://s.cdpn.io/3/dark_wall_@2X.png);
+  background-size: 300px 300px;
+}
+h1 {
+  color: white;
+  em {
+    color: #666;
+    font-size: 16px;
+  }
 }
