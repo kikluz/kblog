@@ -24,16 +24,10 @@ br.clear { clear: both; }
 .container {
   padding: 1.618rem;
 }
-//---------------------------------------------------------------------------
-//  Columns
-//---------------------------------------------------------------------------
-.columns {
-  // height: 100vh;
-  max-width: 100%;
-}
-/* Pen-specific styles */
-.image_brand {
-  img {max-width: 200px;}
+.columns:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 //// two pannel
@@ -51,13 +45,13 @@ br.clear { clear: both; }
 /* Control the left side */
 .left {
   left: 0;
-  background-color: #111;
+  background-color: #e5f4f7;
 }
 
 /* Control the right side */
 .right {
   right: 0;
-  background-color: red;
+  background-color: #82d8e2;
 }
 
 /* If you want the content centered horizontally and vertically */
