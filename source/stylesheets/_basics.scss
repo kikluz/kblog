@@ -24,35 +24,11 @@ br.clear { clear: both; }
 .container {
   padding: 1.618rem;
 }
-.columns:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
-//// two pannel
-/* Split the screen in half */
-.split {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  // overflow-x: hidden;
-  padding-top: 20px;
-}
+//------------------------------------------------
+// Two Grids
+//------------------------------------------------
 
-/* Control the left side */
-.left {
-  left: 0;
-  background-color: #e5f4f7;
-}
-
-/* Control the right side */
-.right {
-  right: 0;
-  background-color: #c1e3eb;
-}
 
 /* If you want the content centered horizontally and vertically */
 .centered {
