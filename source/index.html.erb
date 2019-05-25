@@ -25,14 +25,26 @@ title: Kikluz's Blog
 </div>
 
 
-<div class="container">
-  <div class="row">
-    <div class="col-sm-12 col-md-8">
-      <p>Some article content</p>
-    </div>
-    <div class="col-sm-12 col-md-4">
-      <p>Some aside content</p>
+<div class="columns">
+  <div class="split left">
+    <div class="centered">
+      <%= image_tag 'hitman_logo.jpg' %>
+      <h2>Kikluz</h2>
+      <p><%= lorem.sentences 5 %></p>
     </div>
   </div>
-</div> <!-- end of container --->
 
+  <div class="split right">
+    <div class="centered">
+      <h2>Kikluz</h2>
+       <p>
+        I create static websites fast and simple with modern
+        tools for web development.
+      </p> 
+      <%= link_to 'Blog', '/blog.html', :relative => true %>
+      <p>
+        It is hard to keep it in my mind so I decided to write it down!
+      </p> 
+    </div>
+  </div>
+</div>
