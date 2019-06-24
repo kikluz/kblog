@@ -33,7 +33,7 @@ br.clear { clear: both; }
 
 /* If you want the content centered horizontally and vertically */
 .centered {
-  text-align: center;
+  // text-align: center;
 }
 
 /* Style the image inside the centered container, if needed */
@@ -45,7 +45,12 @@ br.clear { clear: both; }
 //-------------------------------------------------
 //
 //-------------------------------------------------
+.columns {
+  max-width: 900px;
+}
 .grid {
   display: flex; /* or inline-flex */
 }
+
+/////////////////////////////////////
 
