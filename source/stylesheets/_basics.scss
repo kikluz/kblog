@@ -40,12 +40,14 @@ body {
   font-family: 'Merriweather', serif;
   // background-color: #ededed;
   color: #212121;
-  line-height: 1.618;
-  font-size: 16px;
 }
 h1,h2,h3,h4,h5,h6 {
 	font-family: Arial, sans-serif;
 	color: #aeaeae;
+}
+p {
+  font-size: 1.2em;
+  line-height: 1.55em;
 }
 br.clear { clear: both; }
 .container {
@@ -79,7 +81,13 @@ br.clear { clear: both; }
 }
 
 /////////////////////////////////////
+.blog {
+  background: #58a linear-gradient(#77a0bb, #58a);
+  box-shadow: 0 .05em .25em gray;
 
+ 
+
+}
 $article-layout-grid: (
   columns: 1,
   gutter: 2rem,
