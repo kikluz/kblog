@@ -50,7 +50,16 @@ main {
 
 /* If you want the content centered horizontally and vertically */
 .centered {
-// text-align: center;
+  // text-align: center;
+  padding: 1em 2em;
+  margin: auto;
+  box-sizing: border-box;
+  text-align: center;
+
+  h1 {
+    margin-bottom: .2em;
+    font-size: 150%;
+  }
 }
 
 /* Style the image inside the centered container, if needed */
@@ -63,15 +72,48 @@ main {
 //
 //-------------------------------------------------
 .columns {
+   // Centering an element horizontally
+// align-items: center;
+// justify-content: center;
+  display: flex;
+  min-height: 100vh;
   max-width: 600px;
   float: left;  
   margin-right: auto;
   margin-left: auto;
-}
-.grid {
-
+ 
 }
 
-/////////////////////////////////////
+//-------------------------------------------------
+// table layou on page table_layout
+//-------------------------------------------------
+
+section {
+  width: 500px;
+  margin: 2em;
+  background: white;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+section + section table { table-layout: fixed }
+
+td {
+  border: 1px solid #aaa;
+}
+
+td.preformatted {
+  white-space: pre;
+  font-family: Consolas, Monaco, monospace;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+//////////////////////////////////////////////// footer
+
 
 

@@ -10,9 +10,14 @@ title: Kikluz's Blog
         <%= image_tag 'hitman_logo.jpg' %>
         <h2>Kikluz</h2>
         <p><%= lorem.sentences 5 %></p>
+        <p>
+          check my table page
+          <%= link_to 'Click here', '/table.html', :relative => true %>
+        </p>
       </div>
     </div>
     <div class="columns">
+      <div class="centered">
       <h2>Notes</h2>
       <p>
         I create static websites fast and simple with modern
@@ -24,6 +29,7 @@ title: Kikluz's Blog
       <p>
         It is hard to keep it in my mind so I decided to write it down!
       </p>
+    </div> <!-- end of centered -->
     </div>
 
   </div><!-- end of grid -->
