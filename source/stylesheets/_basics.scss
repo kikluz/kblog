@@ -10,40 +10,25 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; 
 }
-img {
-  width: auto;
-  max-width: 100%;
-  height: auto !important; 
-}
-.wrapper {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.wrapper:after,
-.row:after {
-      content: "";
-      display: table;
-      clear: both; 
-      }
-      [class*='column-'] {
-    float: left;
-    padding: 1em;
-    width: 100%;
-    min-height: 1px; 
-    }
 html, body, section {
   height: 100%;
   margin: 0 auto;
 }
 body {
   font-family: 'Merriweather', serif;
-  // background-color: #ededed;
-  color: #212121;
+// background-color: #ededed;
+color: #212121;
 }
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto !important; 
+}
+
+
 h1,h2,h3,h4,h5,h6 {
-	font-family: Arial, sans-serif;
-	color: #aeaeae;
+  font-family: Arial, sans-serif;
+  color: #aeaeae;
 }
 p {
   font-size: 1.2em;
@@ -51,7 +36,6 @@ p {
 }
 br.clear { clear: both; }
 .container {
-  padding-top: 5em;
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
@@ -60,11 +44,13 @@ br.clear { clear: both; }
 //------------------------------------------------
 // Two Grids
 //------------------------------------------------
-
+main {
+  padding: 1em;
+}
 
 /* If you want the content centered horizontally and vertically */
 .centered {
-  // text-align: center;
+// text-align: center;
 }
 
 /* Style the image inside the centered container, if needed */
@@ -77,13 +63,13 @@ br.clear { clear: both; }
 //
 //-------------------------------------------------
 .columns {
-max-width: 600px;
+  max-width: 600px;
   float: left;  
   margin-right: auto;
   margin-left: auto;
 }
 .grid {
-  
+
 }
 
 /////////////////////////////////////
