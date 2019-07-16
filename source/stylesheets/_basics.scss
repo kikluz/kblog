@@ -15,9 +15,10 @@ html, body, section {
   margin: 0 auto;
 }
 body {
-  font-family: 'Merriweather', serif;
-// background-color: #ededed;
-color: #212121;
+  // background-color: #ededed;
+  // color: #594545;
+  background-image: url(/images/bg_kikluz.png), 
+  radial-gradient(circle at 50vw 8vh, #105456 0, #174156 60%, #030f1f 100%);
 }
 img {
   width: auto;
