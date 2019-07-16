@@ -15,16 +15,18 @@ html, body, section {
   margin: 0 auto;
 }
 body {
-  // background-color: #ededed;
-  // color: #594545;
   background-image: url(/images/bg_kikluz.png), 
-  radial-gradient(circle at 50vw 8vh, #105456 0, #174156 60%, #030f1f 100%);
+  /* A gradient at the center of its container,
+   starting red, changing to blue, and finishing green */
+  // radial-gradient(circle at center, red 0, blue, green 100%)
+  radial-gradient(circle at 100%, #105456 0, #174156 60%, #030f1f 100%);
+  
 }
-img {
-  width: auto;
-  max-width: 100%;
-  height: auto !important; 
-}
+// img {
+//   width: auto;
+//   max-width: 100%;
+//   height: auto !important; 
+// }
 
 
 h1,h2,h3,h4,h5,h6 {
@@ -73,16 +75,19 @@ main {
 //
 //-------------------------------------------------
 .columns {
-  // Centering an element horizontally
+   // Centering an element horizontally
 // align-items: center;
 // justify-content: center;
   display: flex;
   min-height: 100vh;
   max-width: 600px;
-  float: left;  
-  margin-right: auto;
-  margin-left: auto;
- 
+  float: none;
+   margin-right: auto;
+    margin-left: auto;
+  @media only screen and (min-width: 600px) {
+    float: left; 
+   
+  }
 }
 
 //-------------------------------------------------
