@@ -74,19 +74,34 @@ main {
 //-------------------------------------------------
 //
 //-------------------------------------------------
-.columns {
-   // Centering an element horizontally
-// align-items: center;
-// justify-content: center;
+.grid {
+  
+}
+.column_left {
+  @media only screen and (max-width: 600px) {
+    width:100%;
+  }
+  // Centering an element horizontally
+  // align-items: center;
+  // justify-content: center;
+  width:50%;
+  height:100px;
+  float:left;
   display: flex;
   min-height: 100vh;
-  max-width: 600px;
-  float: left; 
-   margin-right: auto;
-    margin-left: auto;
+}
+.column_right {
   @media only screen and (max-width: 600px) {
-   
+    width:100%;
   }
+  // Centering an element horizontally
+  // align-items: center;
+  // justify-content: center;
+  width:50%;
+  height:100px;
+  float:left;
+  display: flex;
+  min-height: 100vh;
 }
 
 //-------------------------------------------------
