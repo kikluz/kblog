@@ -75,29 +75,24 @@ main {
 //
 //-------------------------------------------------
 .column_left {
-  // Centering an element horizontally
-  // align-items: center;
-  // justify-content: center;
   width:50%;
   height:100px;
   float:left;
   display: flex;
-  min-height: 100vh;
 }
-.column_right {
 
-  // Centering an element horizontally
-  // align-items: center;
-  // justify-content: center;
+.column_right {
   width:50%;
   height:100px;
   float:left;
   display: flex;
-  min-height: 100vh;
 }
 .columns {
+  // Centering an element horizontally
+  min-height: 100vh;
    @media only screen and (max-width: 600px) {
     width:100%;
+    min-height: 32em;
   }
 }
 
