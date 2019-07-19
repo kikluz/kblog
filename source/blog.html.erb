@@ -2,9 +2,12 @@
 title: Middleman Blog
 ---
 <!--  -->
+<div class="container">
 	<div class="content-container">
-		<h1>Heading One</h1>
-		<h2>Heading Two</h2>
+		<h1>The begining of the end!</h1>
+		<blockquote>
+			Determinacion es la solucion!
+		</blockquote>
 		<hr>
 		<% blog.articles[0...5].each do |article| %>
 		<h1>
@@ -15,7 +18,7 @@ title: Middleman Blog
 		<span class="text-alpha"><%= link_to "Read more", article.url, :relative => true %></span>
 		<% end %>
 	</div>
-
+</div>
 	
   
 
