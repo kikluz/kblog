@@ -74,13 +74,7 @@ main {
 //-------------------------------------------------
 //
 //-------------------------------------------------
-.grid {
-  
-}
 .column_left {
-  @media only screen and (max-width: 600px) {
-    width:100%;
-  }
   // Centering an element horizontally
   // align-items: center;
   // justify-content: center;
@@ -91,9 +85,7 @@ main {
   min-height: 100vh;
 }
 .column_right {
-  @media only screen and (max-width: 600px) {
-    width:100%;
-  }
+
   // Centering an element horizontally
   // align-items: center;
   // justify-content: center;
@@ -102,6 +94,11 @@ main {
   float:left;
   display: flex;
   min-height: 100vh;
+}
+.columns {
+   @media only screen and (max-width: 600px) {
+    width:100%;
+  }
 }
 
 //-------------------------------------------------
