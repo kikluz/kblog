@@ -34,8 +34,9 @@ h1,h2,h3,h4,h5,h6 {
   color: #aeaeae;
 }
 p {
-  font-size: 1.2em;
-  line-height: 1.55em;
+    font-size: 21px;
+    line-height: 30px;
+    margin: 10px 0;
 }
 br.clear { clear: both; }
 .container {
@@ -133,5 +134,14 @@ td.preformatted {
   }
 }
 
+//-------------------------------------------------
+// Fotter Links
+//-------------------------------------------------
+.social_links {
+  text-align: center;
+  padding: 2em;
+}
 
+
+   
 
