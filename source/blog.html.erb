@@ -15,15 +15,17 @@ title: Middleman Blog
 			<time><%= article.date.strftime('%b %e %Y') %></time>
 		</h1>
 		<%= article.summary %>
-		<span class="text-alpha"><%= link_to "Read more", article.url, :relative => true %></span>
+		<span class="text-alpha">
+			<%= link_to "Read more", article.url, :relative => true %>
+		</span>
 		<% end %>
 	</div>
 	<hr>
 	<blockquote class="blog_links">
-          <%= link_to 'Home', '/index.html', :relative => true %> |
+		<%= link_to 'Home', '/index.html', :relative => true %> |
 
-          <a href="#">Art</a> |
-        </blockquote> 
+		<a href="#">Art</a> |
+	</blockquote> 
 </div>
 	
   
