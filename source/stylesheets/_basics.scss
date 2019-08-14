@@ -33,11 +33,13 @@ h1,h2,h3,h4,h5,h6 {
   font-family: Arial, sans-serif;
   color: #aeaeae;
 }
+// a // outline: $focus-outline; comment on base/_typography.scss
 p {
     font-size: 21px;
     line-height: 30px;
     margin: 10px 0;
 }
+
 br.clear { clear: both; }
 .container {
   max-width: 1200px;
