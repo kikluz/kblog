@@ -93,10 +93,11 @@ main {
 }
 .columns {
   // Centering an element horizontally
-  min-height: 100vh;
-   @media only screen and (max-width: 600px) {
+  // min-height: 100vh;
+  min-height: 600px;
+   @media only screen and (max-width: 800px) {
     width:100%;
-    min-height: 32em;
+    min-height: 25em;
   }
 }
 
@@ -140,6 +141,16 @@ td.preformatted {
 //-------------------------------------------------
 // Fotter Links
 //-------------------------------------------------
+footer {
+   bottom: 0;
+ color: #707070;
+ height: 2em;
+ left: 0;
+ position: fixed; /* OldProperty */
+ position: static;/* Updated Property */
+ font-size: small;
+ width:100%;
+}
 .social_links {
   text-align: center;
   padding: 2em;
