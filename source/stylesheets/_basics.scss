@@ -141,6 +141,20 @@ td.preformatted {
 //-------------------------------------------------
 // Fotter Links
 //-------------------------------------------------
+.footer_logo {
+  // text-align: center;
+  padding: 1em 2em;
+  margin: auto;
+  box-sizing: border-box;
+  text-align: center;
+  /* Style the image inside the centered container, if needed */
+  img {
+    width: 3em;
+    border-radius: 15%;
+    padding: 3px;
+    background-color: aliceblue;
+  }
+}
 footer {
    bottom: 0;
  color: #707070;
