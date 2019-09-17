@@ -39,6 +39,15 @@ p {
     line-height: 30px;
     margin: 10px 0;
 }
+a {
+  transition: all 275ms;
+    cursor: pointer;
+    text-decoration: none;
+    color: #b0d1ab;
+}
+  a:hover {
+    color: #16a6b6;
+  }
 
 br.clear { clear: both; }
 .container {
