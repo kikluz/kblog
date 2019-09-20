@@ -9,18 +9,18 @@ title: Blog | kikluz.com
 			Determinacion es la solucion!
 		</blockquote>
 		<hr>
-
 		<% blog.articles[0...5].each do |article| %>
 		<h1>
 			<%= link_to article.title, article.path, :relative => true %>
 			<p><time><%= article.date.strftime('%b %e %Y') %></time></p>
 		</h1>
-		<%= article.summary %>
+		<%= article.summary(150) %>
 		<span class="text-alpha">
 			<%= link_to "Read more", article.url, :relative => true %>
 		</span>
 		<% end %>
 	</div>
+
 	<hr>
 	<blockquote class="blog_links">
 		<%= link_to 'Home', '/index.html', :relative => true %> |
