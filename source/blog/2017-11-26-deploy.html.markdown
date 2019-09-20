@@ -1,6 +1,6 @@
 ---
 layout: article_layout
-title: deploy
+title: Deploy
 date: 2017-11-26 00:19 UTC
 tags: 
 permalink: deploy to github/
