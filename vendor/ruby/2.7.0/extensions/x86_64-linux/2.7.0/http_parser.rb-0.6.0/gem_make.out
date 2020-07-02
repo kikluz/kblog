@@ -1,0 +1,16 @@
+current directory: /home/kikluz/development/personal/middleman/kblog/vendor/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+/home/kikluz/.rbenv/versions/2.7.1/bin/ruby -I /home/kikluz/.rbenv/versions/2.7.1/lib/ruby/site_ruby/2.7.0 -r ./siteconf20200626-4586-128nzxj.rb extconf.rb
+creating Makefile
+
+current directory: /home/kikluz/development/personal/middleman/kblog/vendor/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" clean
+
+current directory: /home/kikluz/development/personal/middleman/kblog/vendor/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR="
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.so
+
+current directory: /home/kikluz/development/personal/middleman/kblog/vendor/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20200626-4586-ymcr6i

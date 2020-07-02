@@ -1,6 +1,6 @@
 ---
 layout: article_layout
-title: Deploy
+title: Basic Commands GIT
 date: 2017-11-26 00:19 UTC
 tags: 
 permalink: deploy to github/
@@ -8,12 +8,16 @@ permalink: deploy to github/
 ---
 
 
-##Deploy to git page pages
+##Favorite GIT commands
 
-How to deploy to github pages the easy way
-What is Lorem Ipsum?
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-
-
+This is some of basic commads GIT 
+<br>
+1. git status
+<br>
+2. git add .
+<br>
+3. git commit -m" comment goes here "
+<br>
+4. git status 
+<br>
+5. git push
