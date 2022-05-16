@@ -1,0 +1,15 @@
+current directory: /home/kikluz/development/personal/middleman/kblog/vendor/ruby/2.7.0/gems/fast_blank-1.0.1/ext/fast_blank
+/home/kikluz/.rbenv/versions/2.7.1/bin/ruby -I /home/kikluz/.rbenv/versions/2.7.1/lib/ruby/site_ruby/2.7.0 -r ./siteconf20210829-9091-1s5e71k.rb extconf.rb
+creating Makefile
+
+current directory: /home/kikluz/development/personal/middleman/kblog/vendor/ruby/2.7.0/gems/fast_blank-1.0.1/ext/fast_blank
+make DESTDIR\= clean
+
+current directory: /home/kikluz/development/personal/middleman/kblog/vendor/ruby/2.7.0/gems/fast_blank-1.0.1/ext/fast_blank
+make DESTDIR\=
+compiling fast_blank.c
+linking shared-object fast_blank.so
+
+current directory: /home/kikluz/development/personal/middleman/kblog/vendor/ruby/2.7.0/gems/fast_blank-1.0.1/ext/fast_blank
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 fast_blank.so ./.gem.20210829-9091-56v76z
