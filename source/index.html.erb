@@ -1,14 +1,14 @@
 ---
 title: Home | kikluz.com
 ---
+
 <div class="container">
 
-  <div class="grid">
-
-    <div class="column_left columns">
-      <div class="centered">
+  <div class="container-wrapper">
+    <section class="section-info outter-line">
+      <div>
         <%= image_tag 'kikluzlogo_ink.svg' %>
-        <h2>Welcome!</h2>
+        <h1>Welcome!</h1>
         <p>My name is Enrique a.k.a. <em>Kikluz</em></p> 
         <p>
           I created this website to share my passions of art, design, and web development.
@@ -16,29 +16,24 @@ title: Home | kikluz.com
         <p>
           I hope you check out my art page. If you like it, follow on social media!
         </p>
-        
       </div>
-      </div>
+    </section> 
 
-    <div class="column_right columns">
-      <div class="centered">
+    <aside class="aside-info outter-line">
+      <div>
+
         <h2>Notes</h2>
         <p>
           It is hard to keep all the stuff I've learned in my mind so I decided to make
           a few notes to remember some techniques and keep learning!!
         </p> 
+        <p>hello title</p>
 
 
-        <blockquote class="blog_links">
-          <%= link_to 'Posts', '/blog.html', :relative => true %> |
-          <%= link_to 'Art', '/art.html', :relative => true %> |
-          <%= link_to 'Projects', '/projects.html', :relative => true %> 
-        </blockquote> 
-        
-      </div> <!-- end of centered -->
-    </div>
-  </div><!-- end of grid -->
+        <p>Hello, I have a responsive border that uses outline. Resize your window to see it working.</p>
+      </div>
+    </aside>
+  </div> <!-- end of wrapper-container -->
 
-</div><!-- end of container -->
-<div style="clear:both;"></div>
+</div> <!-- end of container -->
 

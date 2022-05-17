@@ -5,6 +5,7 @@ gem 'middleman-autoprefixer', '~> 3.0'
 # gem 'middleman-autoprefixer', '~> 2.7'
 gem 'tzinfo-data', platforms: %i[mswin mingw jruby]
 gem 'wdm', '~> 0.1', platforms: %i[mswin mingw]
+
 # deploy to github pages
 gem 'builder', '~> 3.2', '>= 3.2.2'
 gem 'middleman-blog'
@@ -13,11 +14,6 @@ gem 'middleman-livereload', '~> 3.4', '>= 3.4.6'
 gem 'middleman-minify-html', '~> 3.4', '>= 3.4.1'
 gem 'nokogiri'
 
-gem 'bitters'
-gem 'bourbon'
-gem 'neat'
-
-gem 'middleman-sprockets', '~> 4.0.0.rc.1'
 
 gem 'byebug'
 gem 'middleman-compass', '>= 4.0.0'

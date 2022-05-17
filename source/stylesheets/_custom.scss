@@ -1,0 +1,19 @@
+.container-wrapper {
+	display: flex;
+	flex-direction: row;
+	height : 100vh;
+	@include query(mobile){
+		display: flex;
+		flex-direction: column;
+	}
+
+	.section-info {
+		display:flex;
+		justify-content: space-evenly;
+	}
+
+	.aside-info{
+		display:flex;
+		justify-content: space-evenly;
+	}
+}

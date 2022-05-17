@@ -1,7 +1,6 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 activate :livereload
-activate :sprockets
 
 # activate :directory_indexes
 # extensions

@@ -7,22 +7,11 @@
   content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Use the title from a page's frontmatter if it has one -->
   <title><%= current_page.data.title || "Kikluz" %></title>
-  <!-- jquery goes first to work properly -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  
   <%= stylesheet_link_tag "site" %>
   <%= javascript_include_tag "site" %>
+  
   <!-- Include Font Awesome -->
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://kit.fontawesome.com/6388412056.js"></script>
-
-    <!-- Magnific Popup core CSS file -->
-  <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
-
-  <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
-  <!-- Magnific Popup core JS file -->
-  <script src="magnific-popup/jquery.magnific-popup.js"></script>
 
 </head>
 
@@ -37,9 +26,9 @@
   <%= yield %>
 </main>
 
-<footer>
+<!-- <footer>
   <%= partial "layouts/footer" %>
-</footer>
+</footer> -->
 </body>
 
 </html>
