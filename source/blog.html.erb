@@ -2,32 +2,30 @@
 title: Blog | kikluz.com
 ---
 <!--  -->
-<div class="container">
-	<div class="content-container blog_container">
-		<h1>LATEST</h1>
-		<hr>
+<div class="container-center container-wrapper">
+	<h1>LATEST</h1>
+	<div class="underline"></div>
+
+
+
+	<section class="stories">
 		<% blog.articles[0...5].each do |article| %>
-		<h1>
-			<%= link_to article.title, article.path, :relative => true %>
-			<p><time><%= article.date.strftime('%b %e %Y') %></time></p>
-		</h1>
-		<%= article.summary(150) %>
-		<span class="text-alpha">
-			<%= link_to "Read more", article.url, :relative => true %>
-		</span>
+		<article class="story">
+
+			<h4 class="title">
+				<%= link_to article.title, article.path, :relative => true %>
+			</h4>
+			<p class="info">date: <span><time><%= article.date.strftime('%b %e %Y') %></time></span></p>
+			<p class="info"><%= article.summary(50) %></p>
+			<div>
+				<%= link_to "Read more", article.url, :relative => true %>
+			</div>
+
+		</article>
 		<% end %>
-	</div>
-
-	<hr>
-	<blockquote class="blog_links">
-		<%= link_to 'Home', '/index.html', :relative => true %> |
-
-		<%= link_to 'Art', '/art.html', :relative => true %> |
-		<%= link_to 'Projects', '/projects.html', :relative => true %>
-	</blockquote> 
+	</section>	
 </div>
-	
-  
+
 
 
 

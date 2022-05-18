@@ -41,9 +41,15 @@
   }
   // this is class is center image (logo)
   .image-center {
+    img {  border-block-color: black;
+  background-color: azure;
+  border: solid 2px #5988f7;
+  border-radius: 1em;
+}
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2em;
   }
 
   .block-2 {

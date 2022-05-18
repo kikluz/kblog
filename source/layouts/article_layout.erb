@@ -1,18 +1,18 @@
 
 <% wrap_layout :layout do %>
 <main role="main">
-	<div class="container">
+	<div class="container-center container-wrapper">
 		<div class="article_page">
 			<article>
 				<%= yield %>
 			</article>
 		</div>
+
+		<div class="btn">
+			<h4><%= link_to 'Posts', '/blog.html', :relative => true %> </h4>
+		</div>
 	</div>
-	<hr>
-	<div class="container">
-		<%= link_to 'back', '/blog.html', :relative => true %> 
-		<%= link_to 'Home', '/index.html', :relative => true %>
-	</div>
+	
 </main>
 <% end %>
 
