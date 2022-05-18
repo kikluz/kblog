@@ -1,19 +1,56 @@
-.container-wrapper {
+// main content index page 
+.main-container {
 	display: flex;
 	flex-direction: row;
-	height : 100vh;
-	@include query(mobile){
-		display: flex;
+	gap: $gap;
+
+// for mobile 
+	@include query(tablet){
 		flex-direction: column;
 	}
 
-	.section-info {
-		display:flex;
-		justify-content: space-evenly;
+// centered text 
+	[class^="block-"]{
+		display: flex;
+
+		justify-content: center;
+		align-items: center;
+
+		border : 4px solid $color;
+//Setting height of each block
+		height: 100vh -$padding*2;
+
+// Style Rules for Mobile Display
+		@include query(mobile){
+			height: 60vh -$padding*2;
+		}
 	}
 
-	.aside-info{
-		display:flex;
-		justify-content: space-evenly;
+	.block-1{
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		flex-grow: 5;
+		padding: 1rem;
+	}
+
+
+
+	.block-2{
+		display: flex;
+		flex-direction: column;
+		flex-grow: 5;
+		padding: 1rem;
+	}
+	.links{
+		display: inline-flex;
+		h4{  padding: 1rem;}
+		// for mobile 
+		@include query(mobile){
+			h4{
+				padding: 5px;
+				font-size: 1em;
+			}
+		}
 	}
 }
