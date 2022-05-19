@@ -3,16 +3,16 @@
 <main role="main">
 	<div class="container-center container-wrapper">
 		<div class="article_page">
-			<article>
+			<article class="article-layout">
 				<%= yield %>
 			</article>
 		</div>
-
+		<br>
 		<div class="btn">
 			<h4><%= link_to 'Posts', '/blog.html', :relative => true %> </h4>
 		</div>
 	</div>
-	
+
 </main>
 <% end %>
 

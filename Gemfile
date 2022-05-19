@@ -14,8 +14,9 @@ gem 'middleman-livereload', '~> 3.4', '>= 3.4.6'
 gem 'middleman-minify-html', '~> 3.4', '>= 3.4.1'
 gem 'nokogiri'
 
-
+gem 'font-awesome-sass', '~> 6.1.1'
 gem 'byebug'
 gem 'middleman-compass', '>= 4.0.0'
 gem 'middleman-syntax'
 gem 'redcarpet'
+

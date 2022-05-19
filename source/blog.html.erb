@@ -2,18 +2,25 @@
 title: Blog | kikluz.com
 ---
 <!--  -->
-<div class="container-center container-wrapper">
-	<h1>LATEST</h1>
+<div class="container-center">
+
+	<div class="container-wrapper">
+		<h1>LATEST</h1>
+		 <span>
+		 	<%= link_to 'back home', '/index.html', :relative => true, :class => 'btn' %> 
+		</span>
+	</div>
 	<div class="underline"></div>
 
 
 
 	<section class="stories">
-		<% blog.articles[0...5].each do |article| %>
-		<article class="story">
 
+		<% blog.articles[0...5].each do |article| %>
+
+		<article class="story">
 			<h4 class="title">
-				<%= link_to article.title, article.path, :relative => true %>
+				<!-- <%= article.title  %> -->
 			</h4>
 			<p class="info">date: <span><time><%= article.date.strftime('%b %e %Y') %></time></span></p>
 			<p class="info"><%= article.summary(50) %></p>
@@ -22,7 +29,9 @@ title: Blog | kikluz.com
 			</div>
 
 		</article>
+
 		<% end %>
+
 	</section>	
 </div>
 

@@ -5,12 +5,12 @@
   flex-direction: row;
   gap: $gap;
   color: white;
-
+  
   // for mobile
   @include query(tablet) {
     flex-direction: column;
   }
-
+  
   // centered text
   [class^='block-'] {
     // for animation
@@ -19,20 +19,20 @@
     justify-content: center;
     align-items: center;
     align-items: baseline;
-
+    
     // border : 1px solid $color;
     border: solid rgba(255, 255, 255, 0.3) 1px;
     background: transparent;
     transition: all 1s;
     //Setting height of each block
     height: 100vh -$padding * 2;
-
+    
     // Style Rules for Mobile Display
     @include query(mobile) {
-      height: 70vh -$padding * 2;
+      height: 80vh -$padding * 2;
     }
   }
-
+  
   .block-1 {
     display: flex;
     flex-direction: column;
@@ -42,16 +42,16 @@
   // this is class is center image (logo)
   .image-center {
     img {  border-block-color: black;
-  background-color: azure;
-  border: solid 2px #5988f7;
-  border-radius: 1em;
-}
+      background-color: azure;
+      border: solid 2px #5988f7;
+      border-radius: 1em;
+    }
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2em;
   }
-
+  
   .block-2 {
     display: flex;
     // justify-content: space-around;
@@ -64,11 +64,17 @@
     order: 5;
     align-content: stretch;
   }
-  .links {
-    display: inline-flex;
+  .project-links {
     h4 {
       padding: 1rem;
     }
+    a {
+      border: solid #eaea;
+      padding: 10px;
+    }
+  }
+  .links {
+    display: inline-flex;
     // for mobile
     @include query(mobile) {
       h4 {
@@ -77,6 +83,14 @@
       }
     }
   }
+  .social-inks {
+    display: flex;
+    h4{
+      padding: 20px;
+      justify-content: space-evenly;
+    }
+    
+  }
 } // end of main container
 
-// this for testing animation
+

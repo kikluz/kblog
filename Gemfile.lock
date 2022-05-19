@@ -43,6 +43,8 @@ GEM
     fast_blank (1.0.1)
     fastimage (2.2.6)
     ffi (1.15.5)
+    font-awesome-sass (6.1.1)
+      sassc (~> 2.0)
     haml (5.2.2)
       temple (>= 0.8.0)
       tilt
@@ -164,6 +166,7 @@ PLATFORMS
 DEPENDENCIES
   builder (~> 3.2, >= 3.2.2)
   byebug
+  font-awesome-sass (~> 6.1.1)
   middleman (~> 4.2)
   middleman-autoprefixer (~> 3.0)
   middleman-blog

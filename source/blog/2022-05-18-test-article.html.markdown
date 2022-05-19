@@ -1,11 +1,43 @@
 ---
 
-title: test_article
+title: Markdown Syntax
 date: 2022-05-18 19:36 UTC
 tags: 
 
 ---
 
 
-# this is the header from article test
+#### Markdown Syntax 
+This is quick overview of all the Markdown Syntax elements,
+since I am using it for the blog, well I have to learn how to use it. 
+
+
+| ----------- | ---------------------------------------------|
+| Element     | Markdown Syntax                              |
+| ----------- | --------------- -----------------------------|
+| Heading     | # H1 		                                 |
+|			  |	## H2                                        |
+|			  |	### H3                                       |
+| ----------- | ---------------------------------------------|
+|  Bold       | **bold text**                                |
+| ----------- | ---------------------------------------------|
+| Italic      |   *italicized text*                          |
+| ----------- | ---------------------------------------------|
+| Blockquote  | > blockquote                                 |
+| ----------- | ---------------------------------------------|
+| Ordered List | 1. item one                                 |
+|              | 2. item two                                 |
+| -------------| --------------------------------------------|
+| Unordered List | - item one                                |
+|              |  - item two                                 |
+| -------------| --------------------------------------------|
+| Code          | `code`                                     |
+| -------------| --------------------------------------------|
+| Horizontal   | ----         	                             |
+| Rule         |                                             |
+| -------------| --------------------------------------------|
+| Link          |	[title](https://www.example.com)         |
+| -------------| --------------------------------------------|
+|  Image |  ![alt text](image.jpg)							 |
+| -------------| --------------------------------------------|
 
