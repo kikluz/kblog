@@ -6,7 +6,7 @@
   --clr-primary-1: hsl(22, 28%, 21%);
   --clr-primary-2: hsl(22, 28%, 29%);
   --clr-primary-3: hsl(22, 28%, 37%);
-  --clr-primary-4: hsl(22, 28%, 45%);
+  --clr-primary-4: hsl(22, 52%, 64%);
   /* primary/main color */
   --clr-primary-5: hsl(22, 31%, 52%);
   /* lighter shades of primary color */
@@ -95,8 +95,13 @@ ul {
 }
 a {
   text-decoration: none;
-  color: var(--clr-primary-3);
+  color: var(--clr-primary-4);
+  transition: all 1s;
 }
+ a:hover {
+       color:  rgba(132, 237, 255, 0.667);
+      transition: all 1s;
+    }
 hr {
   border: none;
   border-top: 1px solid var(--clr-grey-8);
@@ -132,7 +137,7 @@ p {
   color: var(--clr-grey-6);
 }
 
-@media screen and (min-width: 800px) {
+@include query(tablet){
   h1 {
     font-size: 3rem;
   }
