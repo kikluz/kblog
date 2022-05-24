@@ -22,6 +22,9 @@ end
 
 activate :blog do |blog|
   blog.prefix = 'blog'
+  blog.paginate = true
+  blog.page_link = 'p{num}'
+  blog.per_page = 10
 end
 
 import_path File.expand_path('bower_components', app.root)
@@ -49,3 +52,10 @@ configure :build do
   # Name of the project where you working on
   set :site_url, '/kblog'
 end
+
+# Get  dynnamic pages, single art page 
+ignore "/single_art.html"
+data.gallery.each do |f|
+  proxy "/#{f.title.parameterize}.html", "/single_art.html", locals: {sinle_art: f}
+end
+

@@ -1,0 +1,28 @@
+---
+title: Home | Art page
+---
+
+
+<div class="container-center">
+
+	<div class="title container-wrapper">
+		<h1>art page</h1>
+	</div>
+	<div class="gallery">
+
+
+
+		<section class="images-row">
+			<% data.gallery.each do |f| %>
+			<figure class="images-column">
+		
+					<%= image_tag f.image, :class => 'hover-shadow' %>
+		
+				<figcaption>
+					<p><%= link_to f.title, "#{f.title.parameterize}.html", :class => "btn"%></p>
+				</figcaption>
+			</figure>
+			<% end %>
+		</section>
+
+	</div>

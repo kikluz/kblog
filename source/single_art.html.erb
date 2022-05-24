@@ -1,0 +1,21 @@
+<div class="container-center">
+ 	<div class="title container-wrapper">
+ 		<h1><%= sinle_art.title %></h1>
+ 	</div>
+ 	<div class="gallery">
+
+		<section>
+
+			<figure class="images-column">
+				<%= image_tag sinle_art.image, :class => 'hover-shadow' %>
+				<figcaption>
+					<%= sinle_art.desc %>
+				</figcaption>
+			</figure>
+
+		</section>
+
+		<button class="btn">
+			<%= link_to 'back to gallery', '/art.html', :relative => true %>
+		</button>
+ </div>

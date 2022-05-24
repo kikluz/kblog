@@ -41,3 +41,4 @@ since I am using it for the blog, well I have to learn how to use it.
 |  Image |  ![alt text](image.jpg)							 |
 | -------------| --------------------------------------------|
 
+# code 

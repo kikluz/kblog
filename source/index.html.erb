@@ -10,7 +10,9 @@ title: Home | kikluz.com
 
       <div>
         <div class="image-center">
-          <%= image_tag 'kikluzlogo_ink.svg' %>
+        <% link_to '/' do %>
+            <%= image_tag 'kikluzlogo_ink.svg' %>
+          <% end%>
         </div>
         <h3>Welcome!</h3>
         <blockquote>
@@ -36,23 +38,23 @@ title: Home | kikluz.com
       </blockquote>
       <section class="links project-links item">
         <h4><%= link_to 'Posts', '/blog.html', :relative => true %> </h4>
-        <h4><%= link_to 'Project', '#', :relative => true %> </h4>
-        <h4><%= link_to 'Art', '#', :relative => true %> </h4>
-        <h4><%= link_to 'Pics', '#', :relative => true %> </h4>
+        <h4><%= link_to 'Project', '/projects.html', :relative => true %> </h4>
+        <h4><%= link_to 'Art', '/art.html', :relative => true %>  </h4>
+        <h4><%= link_to 'Pics', '/photography.html', :relative => true %> </h4>
         <!-- <h4><%= link_to 'Posts', '/error_page.html', :relative => true %> </h4> -->
       </section>
 
       <section class="links social-inks item">
-       <h4><a href="#"><i class="fab fa-youtube fa-lg"></i></a></h4>
-        <h4><a href="#"><i class="fab fa-instagram fa-lg"></i></a></h4>
-        <h4><a href="#"><i class="fab fa-github fa-lg"></i></a></h4>
-        <h4><a href="#"><i class="fab fa-deviantart fa-lg"></i></a></h4>
+       <a href="https://www.youtube.com/channel/UCdvRDoFjJZeS9yTtevXWfbQ" target="_blank"><i class="fab fa-youtube fa-lg"></i></a>
+        <a href="https://www.instagram.com/kikluz/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="https://github.com/kikluz" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+        <a href="https://www.deviantart.com/kikluz" target="_blank"><i class="fab fa-deviantart fa-lg"></i></a>
       </section>
 
       <section class="links contact-links item">
         <h4>contact me 
         <span>
-         <a href="">
+         <a href="mailto:kikluzr@gmail.com">
          <i class="far fa-envelope fa-lg"></i>
          </a>
          </span>

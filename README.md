@@ -46,9 +46,17 @@ code: middleman article TITLE
 		</section>	
 
 		<% end %>
-
+-------------------------------------------------------------------------
 		# if you want to link the title
 		<%= link_to article.title, article.path, :relative => true %>
 
 		# link for font awesome
 		https://fontawesome.com/v5/icons/envelope?s=regular
+
+		# Fetch api unsplash
+		https://github.com/unsplash/unsplash_rb
+
+		# https://www.json2yaml.com/
+
+# dynamic pages
+		<%= image_tag f.image, :class => 'hover-shadow' %>
