@@ -14,15 +14,37 @@ title: home | projects
 	</div>
 
 	<div class="projects">
-		
-		<section class="projects-info">
-			<h1>this is a title</h1>
-			<%= image_tag 'appliances.png', :class => 'hover-shadow'%>
+		<section class="projects-image">
+			<% link_to 'http://www.hedgeappliance.com/', :target => "_blank" do %>
+				<%= image_tag 'appliances.png', :class => 'hover-shadow'%>
+			<% end %>
 		</section>
-		<aside class="projects-image">
-			<h1>this is a title</h1>
-			<p><%= lorem.sentences 5 %></p>
+		<aside class="projects-info">
+			<h1>hedge Appliance</h1>
+			<p>
+				I made a website for a local small business. So they can have online presence
+			</p>
 		</aside>
 	</div>
+
+	<div class="projects">
+		<section class="projects-image">
+			<% link_to 'http://www.fusion510.com/', :target => "_blank" do %>
+			<%= image_tag 'fusion510.png', :class => 'hover-shadow'%>
+			<% end %>
+		</section>
+		<aside class="projects-image">
+			<h1>fusion510</h1>
+			<p>
+
+				Created this site to help a young musician to have present 
+				online and available to reach people around the world
+
+			</p>
+		</aside>
+	</div>
+
 </div>
 
+<br>
+<br>

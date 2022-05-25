@@ -187,14 +187,16 @@ pre[class^=language-] {
 
   display:flex;
   gap: $gap;
-  justify-content: center;
+  padding-bottom: 2em;
+  // justify-content: center;
+  align-items: center;
 
-  @include query(mobile){
+  @include query(tablet){
      img {
     width: 400px;
     height: 0 auto;
   }
-
+    align-items: center;
     display: flex;
     flex-direction: column;    
   }
