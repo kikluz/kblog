@@ -1,21 +1,45 @@
+---
+title: home | gallery-item
+---
 <div class="container-center">
- 	<div class="title container-wrapper">
- 		<h1><%= sinle_art.title %></h1>
- 	</div>
- 	<div class="gallery">
+	<div class="container-wrapper">
+		<div class="title">
+				<h1><%= sinle_art.title %></h1>
+			<div class="underline"></div>
+			<br>
+			<span>
+				<%= link_to 'back to gallery', '/art.html', :relative => true, :class => 'btn' %> 
+			</span>
+		</div> 
+	</div>
 
-		<section>
+	<div class="gallery">
 
-			<figure class="images-column">
+		<section class="single-art">
+			<figure class="single-image">
 				<%= image_tag sinle_art.image, :class => 'hover-shadow' %>
 				<figcaption>
-					<%= sinle_art.desc %>
+
 				</figcaption>
 			</figure>
 
-		</section>
+			<aside class="single-image-info">
+				<blockquote>
+					<p>
+						<span>
+							<strong>Title:</strong>
+						</span>
+						<%= sinle_art.title %>
+					</p>
+					<p>
+						<span><strong>description:</strong></span>
+						<%= sinle_art.desc %>
+					</p>
+					<p>
+						<span><strong>Made with: </strong></span><%= sinle_art.media %>
+					</p>
+				</blockquote>
+			</aside>
 
-		<button class="btn">
-			<%= link_to 'back to gallery', '/art.html', :relative => true %>
-		</button>
- </div>
+		</section>
+	</div>

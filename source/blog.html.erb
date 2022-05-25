@@ -1,21 +1,19 @@
 ---
-title: Blog | kikluz.com
+title: home | blog
 ---
-<!--  -->
+
 <div class="container-center">
 
 	<div class="container-wrapper">
-	<div class="title">
-		<h1>LATEST</h1>
-		<span>
-		 	<%= link_to 'back home', '/index.html', :relative => true, :class => 'btn' %> 
-		</span>
+		<div class="title">
+			<h1>LATEST</h1>
+			<div class="underline"></div>
+			<br>
+			<span>
+				<%= link_to 'back home', '/index.html', :relative => true, :class => 'btn' %> 
+			</span>
 		</div> 
 	</div>
-	
-	<div class="underline"></div>
-
-
 
 	<section class="stories">
 
@@ -23,7 +21,6 @@ title: Blog | kikluz.com
 
 		<article class="story">
 			<h4 class="title">
-				<!-- <%= article.title  %> -->
 			</h4>
 			<p class="info">date: <span><time><%= article.date.strftime('%b %e %Y') %></time></span></p>
 			<p class="info"><%= article.summary(50) %></p>

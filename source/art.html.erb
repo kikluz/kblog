@@ -1,16 +1,22 @@
 ---
-title: Home | Art page
+title: home | gallery
 ---
 
 
 <div class="container-center">
 
-	<div class="title container-wrapper">
-		<h1>art page</h1>
+	<div class="container-wrapper">
+		<div class="title">
+			<h1>GALLERY</h1>
+			<div class="underline"></div>
+			<br>
+			<span>
+				<%= link_to 'back home', '/index.html', :relative => true, :class => 'btn' %> 
+			</span>
+		</div> 
 	</div>
+	
 	<div class="gallery">
-
-
 
 		<section class="images-row">
 			<% data.gallery.each do |f| %>
