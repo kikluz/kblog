@@ -1,5 +1,5 @@
 this is on github pages
-Your site is published at https://kikluz.com/
+
 
 # how to setup blog
 

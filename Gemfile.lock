@@ -192,7 +192,7 @@ DEPENDENCIES
   middleman (~> 4.2)
   middleman-autoprefixer (~> 3.0)
   middleman-blog
-  middleman-compass
+  middleman-compass (>= 4.0.0)
   middleman-deploy (= 2.0.0.pre.alpha)
   middleman-livereload (~> 3.4, >= 3.4.6)
   middleman-minify-html (~> 3.4, >= 3.4.1)
