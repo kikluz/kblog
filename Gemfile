@@ -16,8 +16,9 @@ gem 'nokogiri'
 
 gem 'byebug'
 gem 'font-awesome-sass', '~> 6.1.1'
-gem 'middleman-compass', '>= 4.0.0'
+# gem 'middleman-compass', '>= 4.0.0'
 gem 'middleman-syntax'
 gem 'redcarpet'
 
 gem 'unsplash'
+gem "middleman-compass"
