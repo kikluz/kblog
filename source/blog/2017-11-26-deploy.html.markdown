@@ -8,10 +8,9 @@ pageable: true
 
 ---
 
+### Favorite GIT commands
 
-##Favorite GIT commands
-
-This is some of basic commads GIT 
+#### This is some of basic commads GIT 
 <br>
 1. git status
 <br>

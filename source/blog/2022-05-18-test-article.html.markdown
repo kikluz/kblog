@@ -6,7 +6,6 @@ tags:
 
 ---
 
-
 #### Markdown Syntax 
 This is quick overview of all the Markdown Syntax elements,
 since I am using it for the blog, well I have to learn how to use it. 

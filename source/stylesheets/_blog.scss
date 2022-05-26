@@ -3,9 +3,17 @@
 //------------------------------------------------------------------------
 // Story
 //------------------------------------------------------------------------
-.article-layout {
+
+.article_page{
+  display: flex;
+  flex-direction: column;
+  .article-layout {
   background: var(--clr-white);
   padding: 20px;
+  justify-content: center;
+display: grid;
+ p{font-size: 1.5em;}
+}
 }
 .stories {
   width: 90vw;

@@ -18,20 +18,17 @@ title: home | blog
 	<section class="stories">
 
 		<% blog.articles[0...5].each do |article| %>
-
 		<article class="story">
-			<h4 class="title">
-			</h4>
+			<h3 class="title">
+			<%= article.title %>
+			</h3>
 			<p class="info">date: <span><time><%= article.date.strftime('%b %e %Y') %></time></span></p>
 			<p class="info"><%= article.summary(50) %></p>
 			<div>
 				<%= link_to "Read more", article.url, :relative => true %>
 			</div>
-
 		</article>
-
 		<% end %>
-
 	</section>	
 </div>
 
