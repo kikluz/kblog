@@ -9,6 +9,7 @@
         <title><%= current_page.data.title || "Kikluz" %></title>
         <%= stylesheet_link_tag "site" %>
         <%= javascript_include_tag "site" %>
+        <%= javascript_include_tag "gallery" %>
         <%# Font Awesome v5 %>
         <script src="https://kit.fontawesome.com/6388412056.js" crossorigin="anonymous"></script>
     </head>
@@ -16,7 +17,6 @@
     <body>
         <main role="main">
             <%= yield %>
-        </main>
-        <%= javascript_include_tag "gallery" %>
+        </main>   
     </body>
 </html>
