@@ -1,17 +1,16 @@
 
-
 //------------------------------------------------------------------------
-// Story
+// Article Blogs
 //------------------------------------------------------------------------
 
-.article_page{
+.article_page {
   display: flex;
   flex-direction: column;
   .article-layout {
   background: var(--clr-white);
   padding: 20px;
   justify-content: center;
-display: grid;
+// display: grid;
  p{font-size: 1.5em;}
 }
 }
@@ -84,4 +83,11 @@ pre code {
   max-width: 100%;
   min-width: 100px;
   padding: 0;
+}
+
+.highlight {
+    background: #eee;
+    padding: 0 18pt;
+    margin-top: 22pt;
+    overflow-x: auto;
 }
