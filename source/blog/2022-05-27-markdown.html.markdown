@@ -1,9 +1,77 @@
 ---
-
 title: markdown
 date: 2022-05-27 19:09 UTC
-tags: 
-
+tags:
 ---
 
+# cheat sheet of some commonly used Linux commands:
 
+## Navigation:
+
+`pwd`: Print working directory <br>
+`ls`: List files and directories <br>
+`-l`: Long format <br>
+`-a`: Show hidden files <br>
+`cd`: Change directory
+`cd` ..: Move up one level
+cd ~: Go to home directory
+File Operations:
+cp: Copy files or directories
+cp source destination
+mv: Move or rename files/directories
+mv source destination
+rm: Remove files or directories
+-r: Recursive (for directories)
+-f: Force (no prompt)
+File Viewing and Editing:
+cat: Concatenate and display file content
+more or less: Display content one screen at a time
+nano or vim: Text editors
+nano filename
+vim filename
+
+## Searching:
+
+grep: Search for a pattern in files
+grep pattern filename
+find: Search for files and directories
+find /path/to/search -name filename
+System Information:
+uname: Display system information
+-a: All information
+df: Display disk space usage
+du: Display file and directory space usage
+Process Management:
+ps: Display information about processes
+ps aux: Detailed information
+kill: Terminate a process
+kill PID
+User Management:
+whoami: Display current user
+passwd: Change password
+useradd: Add a new user
+userdel: Delete a user
+Permissions:
+chmod: Change file permissions
+chmod permissions filename
+chown: Change file owner
+chown owner:group filename
+Networking:
+ifconfig: Display and configure network interfaces
+ping: Test network connectivity
+ping hostname
+netstat: Display network connections
+-tuln: Show listening ports
+Package Management:
+apt (Debian/Ubuntu):
+
+apt update: Update package lists
+apt upgrade: Upgrade installed packages
+apt install package: Install a package
+apt remove package: Remove a package
+yum (Red Hat/CentOS):
+
+yum update: Update installed packages
+yum install package: Install a package
+yum remove package: Remove a package
+These are just a few basic commands. Each command has various options and parameters; you can use the manual pages (man command) for more detailed information. For example, man ls will show you the manual for the ls command.
