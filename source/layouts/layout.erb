@@ -7,9 +7,20 @@
         content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Use the title from a page's frontmatter if it has one -->
         <title><%= current_page.data.title || "Kikluz" %></title>
-        <%= stylesheet_link_tag "site" %>
+
+         <%= stylesheet_link_tag "site" %>
         <%= javascript_include_tag "site" %>
         <%= javascript_include_tag "gallery" %>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KKJKPHJB6T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KKJKPHJB6T');
+</script>
+       
         <%# Font Awesome v5 %>
         <script src="https://kit.fontawesome.com/6388412056.js" crossorigin="anonymous"></script>
     </head>
@@ -17,6 +28,7 @@
     <body>
         <main role="main">
             <%= yield %>
-        </main>   
+        </main> 
+  
     </body>
 </html>
